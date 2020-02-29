@@ -17,60 +17,45 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Group root = new Group();
-        Scene scene = new Scene(root,1275,600);
+        Scene scene = new Scene(root,720,406);
         scene.setFill(Color.BLACK);
 
-        Polyline pl1 = new Polyline(new double[] {152,330,100,400,244,400,100,200,244,200,196,270});
-        pl1.setStroke(Color.WHITE);
-        pl1.setStrokeWidth(3);
-        Polyline pl1Stroke = new Polyline(new double[] {152,330,100,400,244,400,100,200,244,200,196,270});
-        pl1Stroke.setStroke(Color.MEDIUMORCHID);
-        pl1Stroke.setStrokeWidth(10);
-        DropShadow sh1 = new DropShadow(70,Color.PURPLE);
+        Polyline pl1 = new Polyline(new double[] {113,209,100,224,142,224,101,173,142,173,130,191});
+        Polyline pl1s = new Polyline(new double[] {113,209,100,224,142,224,101,173,142,173,130,191});
+        DropShadow sh1 = new DropShadow(80,Color.MEDIUMORCHID);
+        pl1.setStroke(Color.WHITE); pl1.setStrokeWidth(4);
+        pl1s.setStroke(Color.BLUEVIOLET); pl1s.setStrokeWidth(7); pl1s.setEffect(sh1);
         sh1.setSpread(0.7);
-        pl1Stroke.setEffect(sh1);
 
-        Polyline pl2 = new Polyline(new double[] {425,330,396,400,314,200,478,200,456,255,406,255});
-        pl2.setStroke(Color.WHITE);
-        pl2.setStrokeWidth(3);
-        Polyline pl2Stroke = new Polyline(new double[] {425,330,396,400,314,200,478,200,456,255,406,255});
-        pl2Stroke.setStroke(Color.YELLOW);
-        pl2Stroke.setStrokeWidth(10);
-        DropShadow sh2 = new DropShadow(70,Color.YELLOW);
+        Polyline pl2 = new Polyline(new double[] {252,208,243,224,217,173,270,173,262,189,245,189});
+        Polyline pl2s = new Polyline(new double[] {252,208,243,224,217,173,270,173,262,189,245,189});
+        DropShadow sh2 = new DropShadow(80,Color.YELLOW);
+        pl2.setStroke(Color.WHITE); pl2.setStrokeWidth(2);
+        pl2s.setStroke(Color.YELLOW); pl2s.setStrokeWidth(6); pl2s.setEffect(sh2);
         sh2.setSpread(0.7);
-        pl2Stroke.setEffect(sh2);
 
-        Polyline pl3 = new Polyline(new double[] {630,200,548,400,712,400,660,275});
-        pl3.setStroke(Color.WHITE);
-        pl3.setStrokeWidth(3);
-        Polyline pl3Stroke = new Polyline(new double[] {630,200,548,400,712,400,660,275});
-        pl3Stroke.setStroke(Color.RED);
-        pl3Stroke.setStrokeWidth(10);
-        DropShadow sh3 = new DropShadow(70,Color.RED);
+        Polyline pl3 = new Polyline(new double[] {366,173,338,224,391,224,374,194});
+        Polyline pl3s = new Polyline(new double[] {366,173,338,224,391,224,374,194});
+        DropShadow sh3 = new DropShadow(80,Color.RED);
+        pl3.setStroke(Color.WHITE); pl3.setStrokeWidth(3);
+        pl3s.setStroke(Color.RED); pl3s.setStrokeWidth(7); pl3s.setEffect(sh3);
         sh3.setSpread(0.7);
-        pl3Stroke.setEffect(sh3);
 
-        Polyline pl4 = new Polyline(new double[] {946,200,782,200,864,400,916,275});
-        pl4.setStroke(Color.WHITE);
-        pl4.setStrokeWidth(3);
-        Polyline pl4Stroke = new Polyline(new double[] {946,200,782,200,864,400,916,275});
-        pl4Stroke.setStroke(Color.LIME);
-        pl4Stroke.setStrokeWidth(10);
-        DropShadow sh4 = new DropShadow(70,Color.LIMEGREEN);
+        Polyline pl4 = new Polyline(new double[] {505,191,486,224,458,173,513,173});
+        Polyline pl4s = new Polyline(new double[] {505,191,486,224,458,173,513,173});
+        DropShadow sh4 = new DropShadow(80,Color.LIMEGREEN);
+        pl4.setStroke(Color.WHITE); pl4.setStrokeWidth(3);
+        pl4s.setStroke(Color.LIME); pl4s.setStrokeWidth(7); pl4s.setEffect(sh4);
         sh4.setSpread(0.7);
-        pl4Stroke.setEffect(sh4);
 
-        Polyline pl5 = new Polyline(new double[] {1073,260,1098,200,1180,400,1016,400,1043,340,1088,340});
-        pl5.setStroke(Color.WHITE);
-        pl5.setStrokeWidth(3);
-        Polyline pl5Stroke = new Polyline(new double[] {1073,260,1098,200,1180,400,1016,400,1043,340,1088,340});
-        pl5Stroke.setStroke(Color.TURQUOISE);
-        pl5Stroke.setStrokeWidth(10);
-        DropShadow sh5 = new DropShadow(70,Color.TURQUOISE);
+        Polyline pl5 = new Polyline(new double[] {598,189,607,173,635,224,580,224,591,205,607,205});
+        Polyline pl5s = new Polyline(new double[] {598,189,607,173,635,224,580,224,591,205,607,205});
+        DropShadow sh5 = new DropShadow(80,Color.TURQUOISE);
+        pl5.setStroke(Color.WHITE); pl5.setStrokeWidth(2);
+        pl5s.setStroke(Color.TURQUOISE); pl5s.setStrokeWidth(6); pl5s.setEffect(sh5);
         sh5.setSpread(0.7);
-        pl5Stroke.setEffect(sh5);
 
-        root.getChildren().addAll(pl1Stroke,pl1,pl2Stroke,pl2,pl3Stroke,pl3,pl4Stroke,pl4,pl5Stroke,pl5);
+        root.getChildren().addAll(pl1s,pl1,pl2s,pl2,pl3s,pl3,pl4s,pl4,pl5s,pl5);
         primaryStage.setTitle("FX_SEMINAR_1");
         primaryStage.setScene(scene);
         primaryStage.show();
